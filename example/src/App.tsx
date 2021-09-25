@@ -1,25 +1,34 @@
 import React from 'react'
-
 import { FFWidget } from 'fast-forward-widget'
 import 'fast-forward-widget/dist/index.css'
 
 const App = () => {
   return (
-    <div className='mx-auto max-w-xl'>
-      <div className='p-6 space-y-6'>
-        <h1 className='text-indigo-500 font-medium text-4xl'>Test App</h1>
-        <div>
-          <FFWidget
-            projectId='VWJU7eJdIEYGmoyKW4rp'
-            domain='https://fast-forward-p0f7wt0qd-mxkaske.vercel.app'
+    <>
+      <h1 style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 8 }}>
+        Test App
+      </h1>
+      <div>
+        <FFWidget
+          projectId='VWJU7eJdIEYGmoyKW4rp'
+          domain='https://fast-forward-p0f7wt0qd-mxkaske.vercel.app'
+        >
+          <button
+            style={{
+              color: 'white',
+              backgroundColor: 'black',
+              paddingRight: 16,
+              paddingLeft: 16,
+              paddingTop: 8,
+              paddingBottom: 8,
+              borderRadius: 9999
+            }}
           >
-            <button className='rounded-full text-white bg-black font-medium leading-6 py-2 px-4'>
-              Give use Feedback!
-            </button>
-          </FFWidget>
-        </div>
+            Give use Feedback!
+          </button>
+        </FFWidget>
       </div>
-    </div>
+    </>
   )
 }
 
