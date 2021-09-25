@@ -44,6 +44,8 @@ const WidgetForm = ({
           })
         }
       )
+      // eslint-disable-next-line no-unused-expressions
+      formRef.current?.reset()
       setForm('success')
     } catch (error) {
       setForm('error')
@@ -100,7 +102,7 @@ const WidgetForm = ({
         <div>
           <input
             type='radio'
-            name='other'
+            name='type'
             id='other'
             value='other'
             className='text-gray-900 mr-2 focus:outline-none focus:ring-2 focus:ring-indigo-500'

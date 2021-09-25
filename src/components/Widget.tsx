@@ -18,7 +18,6 @@ const Widget: React.FC<WidgetProps> = ({ children, ...props }) => {
   const [popperElement, setPopperElement] =
     React.useState<HTMLDivElement | null>(null)
   const { styles, attributes } = usePopper(referenceElement, popperElement, {
-    // placement: "top",
     modifiers: [{ name: 'offset', options: { offset: [0, 8] } }]
   })
   return (

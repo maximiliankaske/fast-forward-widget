@@ -67,7 +67,7 @@ export function formattedMessages(lang: string) {
   if (Object.keys(translations).includes(lang)) {
     return translations[lang as LanguageCode]
   } else {
-    console.log(`Language code not found: ${lang}`)
+    console.warn(`Language code not found: ${lang}`)
     return translations.en
   }
 }
