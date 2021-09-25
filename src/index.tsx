@@ -1,12 +1,14 @@
-import * as React from 'react'
+import React from 'react'
+import Widget from './components/Widget'
 import './tailwind.css'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
+export const FFWidget: React.FC = ({ children }) => {
   return (
-    <h1 className='text-gray-500 font-medium text-4xl'>Fast Forward: {text}</h1>
+    <Widget
+      projectId=''
+      domain='https://fast-forward-p0f7wt0qd-mxkaske.vercel.app'
+    >
+      {children}
+    </Widget>
   )
 }
