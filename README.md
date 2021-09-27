@@ -1,3 +1,7 @@
+# TODO:
+
+Write RAW JS for basic functionality (without any React)
+
 # fast-forward-widget
 
 > Made with create-react-library
